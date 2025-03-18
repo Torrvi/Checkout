@@ -97,10 +97,11 @@ section >div{
     overflow-x: auto;
     scroll-behavior: smooth;
     max-width: 950px;
+    justify-content: space-between;
 }
 .item{
     background-color: white;
-    width: 145px;
+    width: 10.2vw;
     height: 220px;
     display: flex;
     flex-direction: column;
@@ -157,7 +158,26 @@ section >div{
     }
 
     .item {
-        width: 105px; 
+        width: 46.2211111111%; 
+        height: 180px;
+        font-size: 80%; 
+    }
+}
+@media (max-width:393px){
+    header >img{
+        width: 15vh;
+    }
+    .cell{
+        display: block;
+    }
+    .comp{
+        display: none;
+    }
+    .carrossel {
+        max-width: 300px;
+    }
+    .item {
+        width: 40%; 
         height: 180px;
         font-size: 80%; 
     }
