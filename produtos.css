@@ -97,7 +97,7 @@ section >div{
     overflow-x: auto;
     scroll-behavior: smooth;
     max-width: 948px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .item{
     background-color: white;
@@ -139,31 +139,10 @@ section >div{
 
 }
 .antes, .depois{
-    margin: 5px;
+    margin: 5px 5px 5px 0px;
 }
 .cell{
     display: none;
-}
-@media (max-width:414px){
-    header >img{
-        width: 15vh;
-    }
-    .cell{
-        display: block;
-    }
-    .comp{
-        display: none;
-    }
-    .carrossel {
-        max-width: 350px;
-    }
-    .item {
-        width: 25.1vw; 
-        font-size: 80%; 
-    }
-    .titulo{
-        height: 28px;
-    }
 }
 @media (max-width:390px){
     header >img{
@@ -175,11 +154,26 @@ section >div{
     .comp{
         display: none;
     }
-    .carrossel {
-        max-width: 350px;
+    .item {
+        width: 44.2000000%; 
+        font-size: 80%; 
+    }
+    .titulo{
+        height: 28px;
+    }
+}
+@media (max-width:414px){
+    header >img{
+        width: 15vh;
+    }
+    .cell{
+        display: block;
+    }
+    .comp{
+        display: none;
     }
     .item {
-        width: 24.1vw; 
+        width: 45.10900000%; 
         font-size: 80%; 
     }
     .titulo{
