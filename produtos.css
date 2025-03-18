@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lora:ital,wght@0,400..700;1,400..700&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&display=swap');
 :root{
     --cor0: #F2EFDC;
     --cor1: #EDE0D4;
     --cor2: #C07353;
     --cor3: #400101;
     --cor4: #728C8A;
-    --cor5: #172C3D;
+    --cor5: #1f3b52;
 
     --font-0: 'Fleur De Leah', 'sans-serif';
-    --font-1: 'Mea Culpa','sans-serif';
+    --font-1: 'Tangerine','sans-serif';
     --font-2:'Quicksand', 'sans-serif';
     --font-3: 'Merriweather', 'sans-serif';
+    --font-4: 'Mea Culpa', 'sans-serif';
 }
 *{
     margin: 0px;
@@ -54,7 +55,7 @@ h1{
     font-size: 3rem;
 }
 h2{
-    font-family: var(--font-1);
+    font-family: var(--font-4);
     font-size: 2rem;
     color: var(--cor5);
 }
@@ -170,6 +171,10 @@ section >div{
     .carrossel{
         scrollbar-width: none;
     }
+    h2{
+        font-family: var(--font-1);
+        font-size: 2rem;
+    }
 }
 @media (max-width:414px){
     header >img{
@@ -194,4 +199,8 @@ section >div{
     .antes, .depois{
     display: none;
    } 
+   h2{
+    font-family: var(--font-1);
+    font-size: 2rem;
+    }
 }

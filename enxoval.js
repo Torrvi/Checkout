@@ -9,7 +9,7 @@ function entrar(){
     const usuario = document.getElementById("nome").value;
     const senha = document.getElementById("senha").value;
     const usuariocadastrado = ["Garota" , "Garoto"] ;
-    const senhacadastrada = "031224";
+    const senhacadastrada = "021224";
     if(usuariocadastrado.includes(usuario)&& senha === senhacadastrada){
         window.location.href = "produtos.html";
     } else{
