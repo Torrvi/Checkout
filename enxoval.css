@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0: #F2EFDC;
+    --cor1: #C07353;
+    --cor2: #DF915F;
+    --cor3: #400101;
+    --cor4: #728C8A;
+
+    --font-1: 'montserrat','sans-serif';
+    --font-2:'roboto', 'sans-serif';
+    --font-3: 'open sans', 'sans-serif';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(imagens/enxoval.jpeg);
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor0);
+    width: 300px;
+    height: 250px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 12px 17px rgba(0, 0, 0, 0.747)
+}
+h1{
+    font-family: var(--font-1);
+}
+p{
+    font-family: var(--font-);
+    padding: 5px 2px;
+}
+#entrar{
+    background-color: var(--cor4);
+    color: white;
+    padding: 4px;
+    margin-top: 7px;
+    border-radius: 7px;
+}
+#mensagem{
+    padding: 0px;
+}
