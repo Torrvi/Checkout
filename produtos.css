@@ -155,11 +155,10 @@ section >div{
         display: none;
     }
     .carrossel {
-        max-width: 300px;
+        max-width: 350px;
     }
-
     .item {
-        width: 25vw; 
+        width: 25.1vw; 
         font-size: 80%; 
     }
     .titulo{
@@ -177,10 +176,10 @@ section >div{
         display: none;
     }
     .carrossel {
-        max-width: 300px;
+        max-width: 350px;
     }
     .item {
-        width: 24vw; 
+        width: 24.1vw; 
         font-size: 80%; 
     }
     .titulo{
