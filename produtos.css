@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lora:ital,wght@0,400..700;1,400..700&family=Mea+Culpa&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&display=swap');
 :root{
     --cor0: #F2EFDC;
     --cor1: #EDE0D4;
@@ -8,7 +8,7 @@
     --cor5: #172C3D;
 
     --font-0: 'Fleur De Leah', 'sans-serif';
-    --font-1: 'Lora','sans-serif';
+    --font-1: 'Mea Culpa','sans-serif';
     --font-2:'Quicksand', 'sans-serif';
     --font-3: 'Merriweather', 'sans-serif';
 }
@@ -54,7 +54,7 @@ h1{
     font-size: 3rem;
 }
 h2{
-    font-family: var(--font-3);
+    font-family: var(--font-1);
     font-size: 2rem;
     color: var(--cor5);
 }
@@ -84,23 +84,17 @@ section{
 section >div{
     padding: 10px;
 }
-button{
-    appearance: none;
-}
 .carrossel-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
     scroll-snap-type: x mandatory;
 }
 .carrossel{
     display: flex;
-    gap: 10px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    max-width: 948px;
-    justify-content: space-between;
+    max-width: 1055px;
 }
 .item{
     background-color: white;
@@ -113,8 +107,8 @@ button{
     border-radius: 22px;
     border: 2px solid rgba(0, 0, 0, 0.589);
     flex-shrink: 0;
-    scroll-snap-align: start; 
-    margin-bottom: 7px;
+    scroll-snap-align: start;
+    margin: 0px 7px 5px 7px;
 }
 .item> img{
     width: 100%;
@@ -132,14 +126,20 @@ button{
     border-bottom: 2px solid rgba(0, 0, 0, 0.589);
 }
 .adicionar{
-    color: var(--cor5);
+    color: black;
     background-color: #34C759;
     width: 100%;
     text-align: center;
     padding: 8px 0px;
     border-radius: 0px 0px 21px 21px;
     border-top: 2px solid rgba(0, 0, 0, 0.589);
-
+}
+.adicionado {
+    background-color: rgb(118, 118, 230);
+    color: white;
+}
+.tudo{
+    padding: 0px 10px;
 }
 .antes, .depois{
     margin: 5px 5px 5px 0px;
@@ -164,6 +164,12 @@ button{
     .titulo{
         height: 28px;
     }
+    .antes, .depois{
+        display: none;
+    } 
+    .carrossel{
+        scrollbar-width: none;
+    }
 }
 @media (max-width:414px){
     header >img{
@@ -179,7 +185,13 @@ button{
         width: 45.10900000%; 
         font-size: 80%; 
     }
+    .carrossel{
+        scrollbar-width: none;
+    }
     .titulo{
         height: 28px;
     }
+    .antes, .depois{
+    display: none;
+   } 
 }

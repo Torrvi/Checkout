@@ -5,11 +5,9 @@ carrosselContainers.forEach(container => {
     const bantes = container.querySelector('.antes');
     const bdepois = container.querySelector('.depois');
     const item = container.querySelector('.item');
+
     
-    const carrosselStyle = getComputedStyle(carrossel);
-    const gap = parseInt(carrosselStyle.gap);
-    
-    const itemLargura = item.offsetWidth + gap;
+    const itemLargura = item.offsetWidth + 14;
 
     bdepois.addEventListener('click', () => {
         carrossel.scrollBy({ left: itemLargura, behavior: 'smooth' });
@@ -17,5 +15,19 @@ carrosselContainers.forEach(container => {
 
     bantes.addEventListener('click', () => {
         carrossel.scrollBy({ left: -itemLargura, behavior: 'smooth' });
+    });
+});
+
+const botoesAdicionar = document.querySelectorAll('.adicionar');
+
+botoesAdicionar.forEach(botao => {
+    botao.addEventListener('click', () => {
+        if (botao.classList.contains('adicionado')) {
+            botao.classList.remove('adicionado');
+            botao.innerHTML = '<p>Adicionar</p>';
+        } else {
+            botao.classList.add('adicionado');
+            botao.innerHTML = '<p>Adicionado</p>';
+        }
     });
 });
