@@ -84,6 +84,9 @@ section{
 section >div{
     padding: 10px;
 }
+button{
+    appearance: none;
+}
 .carrossel-container{
     display: flex;
     align-items: center;
